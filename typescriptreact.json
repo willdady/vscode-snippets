@@ -1,15 +1,32 @@
 {
-	"React functional component": {
-		"prefix": "rfc",
-		"body": [
-			"import React from 'react';",
-			"",
-			"const $1 = () => {",
-			"  return <div></div>;",
-			"}",
-			"",
-			"export default $1;"
-		],
-		"description": "Creates a functional component"
-	}
+  "React functional component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const $1 = () => {",
+      "  return <div></div>;",
+      "}",
+      "",
+      "export default $1;"
+    ],
+    "description": "Creates a functional component"
+  },
+  "React Native functional component": {
+    "prefix": "rnfc",
+    "body": [
+      "import React from 'react';",
+      "import { View, ViewStyle } from 'react-native';",
+      "",
+      "type $1Props = {",
+      "  style?: ViewStyle",
+      "}",
+      "",
+      "const $1 = ({ style }: $1Props) => (",
+      "  <View style={style}>{'Hello world'}</View>",
+      ");",
+      "",
+      "export default $1;"
+    ]
+  }
 }
