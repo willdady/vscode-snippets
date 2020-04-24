@@ -28,5 +28,13 @@
       "",
       "export default $1;"
     ]
+  },
+  "React Native StyleSheet": {
+    "prefix": "rnss",
+    "body": [
+      "const styles = StyleSheet.create({",
+      "  $1",
+      "});"
+    ]
   }
 }
